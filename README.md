@@ -1,4 +1,6 @@
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#DDEV_REPO=https%3A%2F%2Fgithub.com%2Fandy-blum%2Fdrupal-FE-training,DDEV_ARTIFACTS=/https://github.com/drud/ddev-gitpod-launcher/)
+<a href="https://gitpod.io/from-referrer/" rel="nofollow">
+  <img src="https://gitpod.io/button/open-in-gitpod.svg" alt="Open in Gitpod">
+</a>
 
 ## Drupal Theming & Development - Intermediate & Advanced Techniques
 
