@@ -1,0 +1,11 @@
+{% extends "block.html.twig" %}
+{#
+/**
+ * @file
+ * Theme override for foomami footer Promo block.
+ */
+#}
+{% block content %}
+  {{ attach_library('foomami/quicklinks') }}
+  {{ content }}
+{% endblock %}
