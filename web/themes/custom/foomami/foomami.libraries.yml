@@ -127,13 +127,6 @@ view-mode-card-common-alt:
   dependencies:
     - foomami/more-link
 
-demo-foomami-tour:
-  css:
-   theme:
-      css/components/tour/tour.theme.css: {}
-  dependencies:
-    - seven/tour-styling
-
 oneplusfourgrid_section:
   css:
     theme:
