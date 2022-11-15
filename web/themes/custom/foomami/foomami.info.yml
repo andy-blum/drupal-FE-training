@@ -27,8 +27,6 @@ libraries-override:
         layouts/fourcol_section/fourcol_section.css: layouts/fourcol_section/fourcol_section.css
 
 libraries-extend:
-  tour/tour-styling:
-    - foomami/demo-foomami-tour
   core/drupal.dialog:
     - foomami/classy.dialog
   core/drupal.dropbutton:

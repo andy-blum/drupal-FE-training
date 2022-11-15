@@ -50,8 +50,6 @@ global:
       css/layout/layout.css: {}
   js:
     js/components/navigation/menu-main/menu-main.js: {}
-  dependencies:
-    - foomami/demo-foomami-tour
 
 messages:
   css:
