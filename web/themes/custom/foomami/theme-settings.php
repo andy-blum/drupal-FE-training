@@ -10,5 +10,10 @@ function foomami_form_system_theme_settings_alter(&$form, FormStateInterface $fo
     '#type' => 'details',
     '#title' => t('Colors'),
     '#open' => true,
+    'primary_color' => [
+      '#type' => 'color',
+      '#title' => t('Primary Color'),
+      '#default_value' => theme_get_setting('primary_color'),
+    ]
   ];
 }
