@@ -10,12 +10,17 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\search\SearchPageInterface;
 use Drupal\views\Form\ViewsForm;
 
+require_once(__DIR__ . '/hex_to_hsl.php');
+
 /**
  * Implements hook_preprocess_HOOK() for HTML document templates.
  *
  * Adds body classes if certain regions have content.
  */
 function foomami_preprocess_html(&$variables) {
+
+  dump(hex_to_hsl(theme_get_setting('primary_color')));
+
   // Add a sidebar class if the sidebar has content in it.
   if (!empty($variables['page']['sidebar'])) {
     $variables['attributes']['class'][] = 'two-columns';
