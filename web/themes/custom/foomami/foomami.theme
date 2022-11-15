@@ -19,7 +19,27 @@ require_once(__DIR__ . '/hex_to_hsl.php');
  */
 function foomami_preprocess_html(&$variables) {
 
-  dump(hex_to_hsl(theme_get_setting('primary_color')));
+  $cssVars = [];
+  $theme_colors = [
+    'primary',
+    'secondary',
+    'accent'
+  ];
+
+  foreach ($theme_colors as $color_name) {
+    $hex = theme_get_setting($color_name . '_color');
+
+    if ($hex) {
+      
+      $hsl = hex_to_hsl($hex);
+
+      $cssVars[] = "--h-$color_name:$hsl[0]";
+      $cssVars[] = "--s-$color_name:$hsl[1]";
+      $cssVars[] = "--l-$color_name:$hsl[2]";
+    }
+  }
+
+  $variables['html_attributes']->setAttribute('style', implode(';', $cssVars) . ';');
 
   // Add a sidebar class if the sidebar has content in it.
   if (!empty($variables['page']['sidebar'])) {
