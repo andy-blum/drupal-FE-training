@@ -1,0 +1,4 @@
+[data-drupal-selector="foomami-color-picker"] > input[type="color"] {
+  vertical-align: bottom;
+  margin-inline-start: 1ch;
+}
