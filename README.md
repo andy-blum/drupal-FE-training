@@ -1,4 +1,4 @@
-<a href="https://gitpod.io/from-referrer/" rel="nofollow">
+<a href="https://gitpod.io/#https://github.com/andy-blum/drupal-FE-training" rel="nofollow">
   <img src="https://gitpod.io/button/open-in-gitpod.svg" alt="Open in Gitpod">
 </a>
 

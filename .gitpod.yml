@@ -8,6 +8,8 @@ tasks:
       ddev composer install
       ddev drush si -y --account-pass=admin --site-name='Frontend-Training' demo_umami
       ddev drush then foomami
+      ddev drush en devel -y
+      ddev drush cset devel.settings devel_dumper kint -y
       ddev drush cset system.theme default foomami -y
       ddev drush cdel core.extension theme.umami -y
     command: |
