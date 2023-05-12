@@ -3,7 +3,11 @@
 		{
 			"name": "Root",
 			"path": "."
-		}
+		},
+    {
+      "name": "Foomami",
+      "path": "./web/themes/custom/foomami"
+    }
 	],
 	"settings": {
 		"files.autoSave": "off",
