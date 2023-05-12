@@ -28,7 +28,7 @@
 }
 .messages--status {
   border: 1px solid #cbdebc;
-  background-color: var(--secondary-white);
+  background-color: #e6eee0;
 }
 .messages--status .messages__content {
   background-image: url(/core/misc/icons/73b355/check.svg);
@@ -51,7 +51,7 @@
   color: inherit;
 }
 .messages a {
-  color: var(--primary-main);
+  color: var(--brand-color);
 }
 .messages__list {
   margin: 0;

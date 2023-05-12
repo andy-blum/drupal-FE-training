@@ -1,12 +1,13 @@
 .shepherd-element:focus {
   outline-width: 1px;
   outline-style: dotted;
-  outline-color: var(--secondary-main);
+  outline-color: var(--link-color);
   outline-offset: 2px;
   box-shadow: none;
 }
 
 .shepherd-cancel-icon {
+  border: solid 2px transparent;
   line-height: 1;
 }
 

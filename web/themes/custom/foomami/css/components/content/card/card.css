@@ -8,7 +8,7 @@
   flex-direction: column;
   width: 100%;
   padding: 1rem;
-  border: 1px solid var(--primary-light);
+  border: 1px solid #fcece7;
 }
 
 .view-mode-card .node__title {
@@ -34,11 +34,6 @@
   color: #000;
 }
 
-/* Need to fix IE11 cards height issue */
-.view-mode-card .node__content {
-  flex-shrink: 0;
-}
-
 .view-mode-card .field--name-field-media-image img {
   display: block;
   width: 100%;
@@ -46,6 +41,6 @@
 }
 
 .view-mode-card .label-items {
-  color: var(--secondary-dark);
+  color: #5f635d;
   font-size: 0.889rem;
 }

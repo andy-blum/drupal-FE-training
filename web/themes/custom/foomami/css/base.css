@@ -2,37 +2,62 @@
  * @file
  * This is the base CSS file, for styling elements.
  */
-:root {
-  --h-primary: 14;
-  --s-primary: 84;
-  --l-primary: 46;
 
-  --primary-main:  hsl(var(--h-primary), calc(1% * var(--s-primary)), calc(1% * var(--l-primary)));
-  --primary-light: hsl(var(--h-primary), calc(1% * (var(--s-primary) - (0.952 * var(--s-primary)))), calc(1% * (var(--l-primary) + (0.907 * (100 - var(--l-primary))))));
-  --primary-white: hsl(var(--h-primary), 100%, calc(1% * (var(--l-primary) + (0.962 * (100 - var(--l-primary))))));
+@font-face {
+  font-family: "Source Sans Pro";
+  src:
+    local("Source Sans Pro"),
+    url("../fonts/source-sans-pro-v21-latin-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
 
-  --h-secondary: 169;
-  --s-secondary: 100%;
-  --l-secondary: 25%;
+@font-face {
+  font-family: "Source Sans Pro";
+  src:
+    local("Source Sans Pro"),
+    url("../fonts/source-sans-pro-v21-latin-italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
 
-  --secondary-dark:  hsl(var(--h-secondary),3%,38%);
-  --secondary-main:  hsl(var(--h-secondary),100%,25%);
-  --secondary-light: hsl(calc(var(--h-secondary) - 30),34%,62%);
-  --secondary-white: hsl(calc(var(--h-secondary) - 30),80%,93%);
+@font-face {
+  font-family: "Source Sans Pro";
+  src:
+    local("Source Sans Pro"),
+    url("../fonts/source-sans-pro-v21-latin-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
 
-  --h-accent: 345;
-  --s-accent: 68%;
-  --l-accent: 53%;
+@font-face {
+  font-family: "Source Sans Pro";
+  src:
+    local("Source Sans Pro"),
+    url("../fonts/source-sans-pro-v21-latin-700italic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
 
-  --accent-main: hsl(var(--h-accent),var(--s-accent),var(--l-accent));
+@font-face {
+  font-family: "Scope One";
+  src:
+    local("Scope One"),
+    local("ScopeOne-Regular"),
+    url("../fonts/scope-one-v14-latin-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
 }
 
 html {
   box-sizing: border-box;
+  --brand-color: orangered;
+  --link-color: seagreen;
+  --cta-color: saddlebrown;
 }
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
   margin-top: 0; /* This allows us to ensure that items side-by-side line up nicely. */
 }
@@ -40,25 +65,25 @@ html {
 *:focus {
   outline-width: 1px;
   outline-style: dotted;
-  outline-color: var(--secondary-main);
-  outline-offset: 2px; /* Not supported in IE11 but greatly improves outline visibility in newer browsers. */
+  outline-color: var(--link-color);
+  outline-offset: 2px;
 }
 
 a {
   text-decoration: underline;
-  color: var(--secondary-main);
+  color: var(--link-color);
 }
 a:hover,
 a:focus {
-  color: var(--primary-main);
-  background-color: var(--secondary-white);
+  color: var(--brand-color);
+  background-color: #e6eee0;
 }
 
 body {
   margin: 0;
   color: #464646;
-  background: var(--primary-white);
-  font-family: "Open Sans", Verdana, sans-serif;
+  background: #fbf5ee;
+  font-family: "Source Sans Pro", Verdana, sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
 }
@@ -102,57 +127,11 @@ blockquote > * {
 }
 blockquote a {
   /* Tweak default link color to improve contrast for accessibility */
-  color: var(--secondary-main);
+  color: #057d6d;
 }
 blockquote a:hover,
 blockquote a:focus {
   background-color: #fdfcf9;
-}
-
-button,
-.button,
-.button[type="submit"],
-[type="reset"],
-[type="submit"] {
-  display: inline-block;
-  min-width: inherit;
-  max-width: inherit;
-  margin: 0;
-  padding: 0.7rem 1.3rem;
-  cursor: pointer;
-  transition: background-color 0.5s ease;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  border: 2px solid var(--secondary-main);
-  border-radius: 3px;
-  background-color: var(--secondary-main);
-  font-family: "Scope One", Georgia, serif;
-  font-size: 1.2rem;
-}
-button:hover,
-button:active,
-button:focus,
-.button:hover,
-.button:active,
-.button:focus {
-  transition: background-color 0.5s ease;
-  text-decoration: none;
-  color: #000;
-  border: 2px solid var(--secondary-main);
-  background-color: var(--secondary-white);
-}
-button[disabled]:hover,
-button[disabled]:active,
-button[disabled]:focus,
-button[disabled],
-.button[disabled]:hover,
-.button[disabled]:active,
-.button[disabled]:focus,
-.button[disabled] {
-  cursor: default;
-  color: #464646;
-  background: #767775;
 }
 
 h1 {
@@ -236,53 +215,6 @@ h6 {
 img {
   max-width: 100%;
   height: auto;
-}
-
-.form-select {
-  margin: 0.25rem 0;
-  color: #000;
-  border: 2px solid #767775;
-  background: #fff;
-  font-size: 1rem;
-}
-
-.form-select:focus {
-  margin-bottom: 2px;
-  border: 2px solid var(--secondary-main);
-}
-
-input {
-  min-width: 100%;
-  max-width: 100%;
-  margin: 0.25rem 0;
-  padding: 0.8rem 0.4rem;
-  color: #000;
-  border: 2px solid #767775;
-  font-size: 1rem;
-}
-input:focus {
-  border: 2px solid var(--secondary-main);
-}
-input[type="checkbox"] {
-  min-width: inherit;
-  max-width: none;
-}
-
-textarea {
-  padding: 0.8rem 0.4rem;
-  color: #000;
-  border: 2px solid #767775;
-}
-textarea:focus {
-  border: 2px solid var(--secondary-main);
-}
-
-label {
-  display: block;
-  margin: 0.25rem 0;
-  color: #464646;
-  font-size: 1rem;
-  font-weight: 700;
 }
 
 /**

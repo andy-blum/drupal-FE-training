@@ -9,7 +9,7 @@
 .search-form > .form-wrapper {
   margin-bottom: 1.28rem;
   padding: 0.889rem;
-  border: 1px solid var(--primary-light);
+  border: 1px solid #fcece7;
   background: #fff;
 }
 
@@ -52,6 +52,19 @@
 .search-form .container-inline label,
 .search-form .container-inline div {
   display: block;
+}
+
+.search-form .form-search {
+  min-width: 100%;
+  max-width: 100%;
+  margin: 0.25rem 0;
+  padding: 0.8rem 0.4rem;
+  color: #000;
+  border: 2px solid #767775;
+  font-size: 1rem;
+}
+.search-form .form-search:focus {
+  border: 2px solid var(--link-color);
 }
 
 .search-form .form-search {
@@ -119,7 +132,7 @@
 .search-results li {
   margin: 0 0 1rem 0; /* LTR */
   padding: 1.28rem;
-  border: 1px solid var(--primary-light);
+  border: 1px solid #fcece7;
   background: #fff;
 }
 /* Without this rule, another RTL rule from item-list.css will break the design */

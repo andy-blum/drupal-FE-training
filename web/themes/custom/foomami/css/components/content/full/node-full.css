@@ -5,9 +5,9 @@
 .node--view-mode-full {
   margin: 0 auto 2.37rem;
   padding: 1.266rem;
-  border-top: 1px solid var(--primary-light);
+  border-top: 1px solid #fcece7;
   border-right: none;
-  border-bottom: 1px solid var(--primary-light);
+  border-bottom: 1px solid #fcece7;
   border-left: none;
   background-color: #fff;
 }
@@ -16,8 +16,8 @@
   /* 960px */
   .node--view-mode-full {
     padding: 2.37rem;
-    border-right: 1px solid var(--primary-light);
-    border-left: 1px solid var(--primary-light);
+    border-right: 1px solid #fcece7;
+    border-left: 1px solid #fcece7;
   }
 }
 
@@ -30,7 +30,7 @@
   margin: 0 0.25ex;
   content: "•";
   vertical-align: middle;
-  color: var(--secondary-light);
+  color: #7cbe8c;
   font-size: 2em;
 }
 

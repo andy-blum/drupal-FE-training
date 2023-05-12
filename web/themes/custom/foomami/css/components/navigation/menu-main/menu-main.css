@@ -62,14 +62,14 @@
 .menu-main__link.is-active:hover,
 .menu-main__link:focus {
   text-decoration: none;
-  color: var(--primary-main);
-  border-bottom-color: var(--primary-main);
+  color: var(--brand-color);
+  border-bottom-color: var(--brand-color);
   background-color: inherit;
 }
 .menu-main__link:active,
 .menu-main__link.is-active {
   text-decoration: none;
-  border-bottom-color: var(--primary-main);
+  border-bottom-color: var(--brand-color);
 }
 
 @media screen and (min-width: 48em) {

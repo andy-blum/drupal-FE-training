@@ -85,7 +85,7 @@
 }
 
 .search-block-form .form-search:focus {
-  border: 2px solid var(--secondary-main);
+  border: 2px solid var(--link-color);
   border-top-left-radius: 2px;  /* LTR */
   border-bottom-left-radius: 2px; /* LTR */
 }
@@ -128,8 +128,7 @@
 .search-block-form .form-submit {
   margin: 0;
   padding: 0.6em 1.25em 0.4em;
-  transition: background-color 0.5s ease;
-  transition: border 0.5s ease;
+  transition: background-color 0.5s ease, border 0.5s ease;
   color: #000;
   border: 2px solid #fff;
   background-color: #fff;
@@ -152,7 +151,7 @@
 .search-block-form .form-submit:focus,
 .search-block-form .form-submit:hover {
   margin: 0;
-  border: 2px solid var(--secondary-main);
+  border: 2px solid var(--link-color);
   outline-offset: 2px;
-  background-color: var(--secondary-white);
+  background-color: #e6eee0;
 }

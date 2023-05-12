@@ -50,7 +50,7 @@
   width: 80%;
   height: 1px;
   content: "";
-  background-color: var(--secondary-white);
+  background-color: #e6eee0;
 }
 .quicklinks__col:last-child::after {
   display: none;
@@ -71,7 +71,7 @@
     width: 1px;
     height: 100%;
     content: "";
-    background-color: var(--secondary-white);
+    background-color: #e6eee0;
   }
   .quicklinks__col:nth-child(3)::after {
     display: block;

@@ -6,7 +6,7 @@
 .field--name-field-ingredients {
   margin-bottom: 1.184rem;
   padding: 1.266rem;
-  background-color: var(--primary-white);
+  background-color: #fbf5ee;
 }
 /* Large */
 @media screen and (min-width: 60rem) {
@@ -20,7 +20,7 @@
 .field--name-field-ingredients .field__label {
   margin: 0 0 1em 0;
   padding: 0 0 0.6em 0;
-  border-bottom: 1px solid var(--primary-light);
+  border-bottom: 1px solid #eec2cb;
   font-family: "Scope One", Georgia, serif;
   font-size: 1.266rem;
   font-weight: 400;
@@ -38,6 +38,6 @@
 .field--name-field-ingredients .field__item {
   margin: 0 0 0.6em 0;
   padding: 0 0 0.6em 0;
-  border-bottom: 1px solid var(--primary-light);
+  border-bottom: 1px solid #eec2cb;
   break-inside: avoid-column;
 }
