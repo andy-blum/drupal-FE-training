@@ -197,4 +197,6 @@ function foomami_theme_suggestions_search_result_alter(array &$suggestions, arra
    * @var \Drupal\node\Entity\Node
    */
   $node = $variables['result']['node'];
+  $type = $node->getType();
+  $suggestions[] = 'search-result--node-' . $type;
 }
