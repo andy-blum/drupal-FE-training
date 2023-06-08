@@ -27,4 +27,5 @@
   </ul>
 {% endmacro %}
 
-{{ menu_links(items) }}
+{% import _self as menus %}
+{{ menus.menu_links(items) }}
