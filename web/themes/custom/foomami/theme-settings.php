@@ -26,4 +26,12 @@ function foomami_form_system_theme_settings_alter(&$form, FormStateInterface $fo
   $form['colors']['brand_color'] = $color_field;
   $form['colors']['brand_color']['#title'] = t('Brand Color');
   $form['colors']['brand_color']['#default_value'] = theme_get_setting('brand_color');
+
+  $form['colors']['link_color'] = $color_field;
+  $form['colors']['link_color']['#title'] = t('Link Color');
+  $form['colors']['link_color']['#default_value'] = theme_get_setting('link_color');
+
+  $form['colors']['cta_color'] = $color_field;
+  $form['colors']['cta_color']['#title'] = t('CTA Color');
+  $form['colors']['cta_color']['#default_value'] = theme_get_setting('cta_color');
 }
