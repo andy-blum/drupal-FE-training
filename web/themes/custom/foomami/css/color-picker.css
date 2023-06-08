@@ -1,3 +1,4 @@
-input {
-  outline: 1px solid red;
+[data-drupal-selector="foomami-color-picker"] [type="color"] {
+  vertical-align: bottom;
+  margin-inline-start: 0.5rem;
 }
