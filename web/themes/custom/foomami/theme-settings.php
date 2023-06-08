@@ -22,4 +22,8 @@ function foomami_form_system_theme_settings_alter(&$form, FormStateInterface $fo
       'data-drupal-selector' => 'foomami-color-picker'
     ]
   ];
+
+  $form['colors']['brand_color'] = $color_field;
+  $form['colors']['brand_color']['#title'] = t('Brand Color');
+  $form['colors']['brand_color']['#default_value'] = theme_get_setting('brand_color');
 }
