@@ -193,5 +193,8 @@ function foomami_theme_suggestions_menu_alter(array &$suggestions, array $variab
  * Implements hook_theme_suggestions_HOOK_alter().
  */
 function foomami_theme_suggestions_search_result_alter(array &$suggestions, array $variables) {
+  /**
+   * @var \Drupal\node\Entity\Node
+   */
   $node = $variables['result']['node'];
 }
