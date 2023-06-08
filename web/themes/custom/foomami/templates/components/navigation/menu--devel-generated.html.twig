@@ -19,6 +19,10 @@
  */
 #}
 
-
-
-<span style="font-size:4rem;font-weight:bold;color:red;">YOUR CUSTOM MENU HERE!</span>
+<nav>
+  <ul>
+    {% for item in items %}
+      <li>{{item.title}}</li>
+    {% endfor %}
+  </ul>
+</nav>
