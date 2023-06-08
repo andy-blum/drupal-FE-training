@@ -34,4 +34,6 @@ function foomami_form_system_theme_settings_alter(&$form, FormStateInterface $fo
   $form['colors']['cta_color'] = $color_field;
   $form['colors']['cta_color']['#title'] = t('CTA Color');
   $form['colors']['cta_color']['#default_value'] = theme_get_setting('cta_color');
+
+  $form['#attached']['library'][] = 'foomami/color_picker';
 }
