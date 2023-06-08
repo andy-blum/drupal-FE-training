@@ -198,5 +198,5 @@ function foomami_theme_suggestions_search_result_alter(array &$suggestions, arra
    */
   $node = $variables['result']['node'];
   $type = $node->getType();
-  $suggestions[] = 'search-result--node-' . $type;
+  $suggestions[] = 'search_result__node_' . $type;
 }
