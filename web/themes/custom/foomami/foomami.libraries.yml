@@ -234,3 +234,12 @@ classy.search-results:
   css:
     component:
       css/classy/components/search-results.css: {}
+
+color_picker:
+  css:
+    component:
+      css/color-picker.css: {}
+  js:
+    js/color-picker.js: {}
+  dependencies:
+    - core/once
