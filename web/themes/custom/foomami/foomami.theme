@@ -177,7 +177,7 @@ function foomami_preprocess_links(&$variables) {
  * Implements hook_theme_suggestions_HOOK_alter().
  */
 function foomami_theme_suggestions_menu_alter(array &$suggestions, array $variables) {
-  if (str_starts_with($variables['menu_name'], 'devel')) {
+  if (str_starts_with($variables['menu_name'], 'devel') && $variables['menu_name'] !== 'devel') {
     $suggestions[] = 'menu__devel_generated';
   }
 }
