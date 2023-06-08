@@ -19,17 +19,12 @@
  */
 #}
 
-<nav>
+{% macro menu_links(items) %}
   <ul>
     {% for item in items %}
       <li>{{item.title}}</li>
-      {% if item.below %}
-        <ul>
-          {% for item in item.below %}
-            <li>{{item.title}}</li>
-          {% endfor %}
-        </ul>
-      {% endif %}
     {% endfor %}
   </ul>
-</nav>
+{% endmacro %}
+
+{{ menu_links(items) }}
