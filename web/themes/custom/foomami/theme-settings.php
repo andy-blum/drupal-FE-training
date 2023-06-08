@@ -10,10 +10,16 @@ function foomami_form_system_theme_settings_alter(&$form, FormStateInterface $fo
     '#type' => 'details',
     '#title' => t('Colors'),
     '#open' => true,
-    'brand_color' => [
-      '#type' => 'color',
-      '#title' => t('Brand Color'),
-      '#default_value' => theme_get_setting('brand_color'),
-    ],
+  ];
+
+  $color_field = [
+    '#type' => 'textfield',
+    '#description' => t('Enter color in hexadecimal format (#abc123)'),
+    '#maxlength' => '7',
+    '#size' => '10',
+    '#pattern' => '^#[a-fA-F0-9]{6}',
+    '#wrapper_attributes' => [
+      'data-drupal-selector' => 'foomami-color-picker'
+    ]
   ];
 }
