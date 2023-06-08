@@ -20,9 +20,13 @@
 #}
 
 {% macro menu_links(items) %}
+  {% import _self as menus %}
   <ul>
     {% for item in items %}
       <li>{{item.title}}</li>
+      {% if item.below %}
+        {{ menus.menu_links(item.below) }}
+      {% endif %}
     {% endfor %}
   </ul>
 {% endmacro %}
