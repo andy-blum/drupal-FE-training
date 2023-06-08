@@ -188,3 +188,10 @@ function foomami_theme_suggestions_menu_alter(array &$suggestions, array $variab
     $suggestions[] = 'menu__devel_generated';
   }
 }
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function foomami_theme_suggestions_search_result_alter(array &$suggestions, array $variables) {
+
+}
