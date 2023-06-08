@@ -19,17 +19,17 @@
  */
 #}
 
-{% macro menu_links(items) %}
+{% macro menu_links(items, level) %}
   {% import _self as menus %}
   <ul>
     {% for item in items %}
-      <li>{{item.title}}</li>
+      <li>Level {{level}}: {{item.title}}</li>
       {% if item.below %}
-        {{ menus.menu_links(item.below) }}
+        {{ menus.menu_links(item.below, level + 1) }}
       {% endif %}
     {% endfor %}
   </ul>
 {% endmacro %}
 
 {% import _self as menus %}
-{{ menus.menu_links(items) }}
+{{ menus.menu_links(items, 1) }}
